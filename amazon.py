@@ -2,17 +2,16 @@ import requests
 import schedule
 import time
 from serpapi import GoogleSearch
+import os
+
 
 # ===== CONFIG =====
 
-SERPAPI_KEY = "536d5e45c160f3308d7bb8a2dc9b6fdb43377d61606eccdb150d36cf1de0178b"
-
-BOT_TOKEN = "6734676820:AAGrE_NWpZBQjN0_YPVuALj24EajPxMfk-o"
+SERPAPI_KEY = os.getenv("SERPAPI_KEY")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 CHANNEL_ID = "@onlineindiaadeals"
-
 AFFILIATE_TAG = "sohamtechdeal-21"
-
 
 # ===== TELEGRAM FUNCTION =====
 
